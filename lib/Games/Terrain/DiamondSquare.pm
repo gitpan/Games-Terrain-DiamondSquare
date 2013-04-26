@@ -1,6 +1,6 @@
 package Games::Terrain::DiamondSquare;
 {
-  $Games::Terrain::DiamondSquare::VERSION = '0.01';
+  $Games::Terrain::DiamondSquare::VERSION = '0.02';
 }
 
 ## ABSTRACT: Random terrain generation via the Diamond Square algorithm
@@ -115,7 +115,7 @@ Games::Terrain::DiamondSquare - Random terrain generation via the Diamond Square
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

@@ -11,7 +11,9 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Random terrain generation via the Diamond Square algorithm",
   "AUTHOR" => "Curtis \"Ovid\" Poe <ovid\@cpan.org>",
-  "BUILD_REQUIRES" => {},
+  "BUILD_REQUIRES" => {
+    "Test::Most" => 0
+  },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -19,8 +21,16 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Games::Terrain::DiamondSquare",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.01",
+  "PREREQ_PM" => {
+    "Exporter" => 0,
+    "List::Util" => 0,
+    "POSIX" => 0,
+    "base" => 0,
+    "constant" => 0,
+    "strict" => 0,
+    "warnings" => 0
+  },
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
